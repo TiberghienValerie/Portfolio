@@ -1,8 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
+
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PortfolioModule } from './portfolio/portfolio.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
+
+const routes: Routes = [
+  {
+    path: '',
+    component: PortfolioComponent
+  }
+];
+
+const config: ExtraOptions = {
+  useHash: true,
+};
 
 @NgModule({
   declarations: [
@@ -10,7 +29,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, config),
+    PortfolioModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
