@@ -8,7 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { SplitPipe } from './split.pipe';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
-
+import { SkillsComponent } from './skills/skills.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { SkillsproComponent } from './skillspro/skillspro.component';
 
 
 @NgModule({
@@ -20,10 +22,13 @@ import { EducationComponent } from './education/education.component';
     AboutComponent,
     SplitPipe,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    SkillsComponent,
+    SkillsproComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatProgressBarModule,
   ]
 })
 export class PortfolioModule { }

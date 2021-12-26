@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 const routes: Routes = [
@@ -32,7 +33,8 @@ const config: ExtraOptions = {
     BrowserAnimationsModule,
     RouterModule.forRoot(routes, config),
     PortfolioModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,7 @@
   padding: 11px 22px;
   cursor: pointer;
   background-color: rgb(21, 70, 95);
+  
   color: #FFFFFF;
 }
 
@@ -1872,6 +1873,7 @@ body {
 .navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):hover,
 .navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):active {
   background-color: rgba(222, 222, 222, 0.3);
+  
 }
 
 .navbar.bg-white:not(.navbar-transparent) .logo-container {
@@ -4924,14 +4926,6 @@ img {
 
 .progress-container .progress-bar {
   height: 5px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
 }
 
 .progress-container .progress {
@@ -4939,10 +4933,7 @@ img {
   font-size: 18px;
 }
 
-.progress-container .aos-animate {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
+
 
 /* Experience Style */
 .cc-experience .cc-experience-header {
@@ -5072,7 +5063,8 @@ a.credit {
   background-color:rgba(55, 140, 63, 0.6)!important;
 }
 .offcanvas-title {
-  color: rgba(0,0,0,.55);
+  /*color: rgba(0,0,0,.55);*/
+  color:#fff;
 }
 
 

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { APP_BOOTSTRAP_LISTENER, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
@@ -189,37 +189,96 @@ export class PortfolioService {
   about = "Amoureuse de l’innovation et de tout ce qui concerne la génération de nouvelles connaissances. Affrontez les problèmes avec le sourire et résolvez-les dès que possible. Très calculé sur le temps que je passe et le travail que je fais."
   resumeurl = "https://drive.google.com/file/d/1-4AA7_7P9vIggU-k5flePZSQ8f26YP0H/view?usp=sharing"
 
+
+  skillpro = `
+  Réaliser des supports techniques, manuels d’exploitation et manuels utilisateurs ainsi que leur suivi .
+  Réaliser la documentation PHPDocumentator de projet .
+  Former ou assister un public à distance ou pas sur les outils réalisés .
+  Analyser des problèmes techniques et déterminer des mesures correctives à distance ou pas .
+  Déterminer les phases et procédures de tests techniques et fonctionnels de programmes et applications informatiques .
+  - Elaborer des tests unitaires et fonctionnels et des jeux de tests
+  Concevoir et développer les programmes et applications informatiques .
+  - Développer en équipe ou en autonomie divers projets sous Angular 12/13 .
+  - Développer en équipe ou en autonomie divers projets sous Symfony 2.x (JQUERY, SCSS) .
+  - Concevoir un module de changement de bandeau multilingue sous Prestashop 1.6 avec sa notice d’explication .
+  - Elaborer un outil de gestion de documents et d’une cartographie (PHP, SQL, Javascript, Api Google) .
+  - Co-développer l’outil extranet de la société sous PHP objet / MYSQL et réaliser des sites de client depuis cet outil .
+  - Réaliser une base de données comptable sous Filemaker Pro et importer les données sous SAGE .
+  - Créer divers outils sous Access .
+  - Créer ou modifier diverses applications sous PHP/MYSQL (Gestion des congés/absences, simulateur de budget)
+
+  
+  
+  
+  
+  
+  
+  `
+
   skillsData: any = [
+   
     {
       'id': '1',
-      'skill': 'ANGULAR 2+',
-      'progress': '85%'
-    },
-    {
-      'id': '2',
-      'skill': 'NODE JS',
+      'titre': 'Logiciels',
+      'skill': 'Plastic, Smart CSV, Git, Git Graph',
       'progress': '80%'
     },
     {
+      'id': '2',
+      'titre': 'Langages',
+      'skill': 'JAVASCRIPT, TYPESCRIPT, AJAX',
+      'progress': '75%'
+    },
+    {
       'id': '3',
-      'skill': 'JAVASCRIPT JQUERY',
+      'titre': 'CMS', 
+      'skill': 'WORDPRESS, SPIP',
       'progress': '80%'
     },
     {
       'id': '4',
-      'skill': 'SQL , MYSQL,MONOGO, FIREBASE',
-      'progress': '75%'
+      'titre': 'Framework',
+      'skill': 'Symfony 5.3 avec Doctrine & Api Platform',
+      'progress': '80%'
     },
+   
+    
     {
       'id': '5',
-      'skill': 'REACT JS',
+      'skill': 'PhpStorm, Eclipse, Visual Studio Code',
       'progress': '75%'
     },
     {
       'id': '6',
-      'skill': 'PYTHON,JAVA',
+      'skill': 'PHP, CSS, SCSS, HTML, XML',
+      'progress': '90%'
+    },
+    {
+      'id': '7',
+      'skill': 'EgroupWare, prestashop, Joomla, MediaWiki',
       'progress': '70%'
-    }
+    },
+    {
+      'id': '8',
+      'skill': 'Boostrap, JQUERY, Angular',
+      'progress': '70%'
+    },
+  
+    {
+      'id': '9',
+      'skill': 'AMC Designer, Looping, MySQl Workbench, Figma',
+      'progress': '80%'
+    },
+    {
+      'id': '10',
+      'skill': 'SQL, PL/SQL, MYSQL, MONGODB ',
+      'progress': '85%'
+    },
+    
+
+
+  
+
   ];
 
 
@@ -387,7 +446,7 @@ export class PortfolioService {
       role: 'Développeuse Web',
       work: `Technologies : PHP orienté Objet, MYSQL . 
       Développement et maintenance de sites de clients sous l’outil extranet de la société en PHP Objet / MYSQL .
-      Co-développement de l’outil extranet de la société sous PHP objet / MYSQL .`
+      Co-développement de l’outil extranet de la société sous PHP objet / MYSQL`
     },
 
 
