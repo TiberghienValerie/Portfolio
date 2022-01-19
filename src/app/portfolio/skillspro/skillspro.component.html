@@ -6,7 +6,14 @@
                 <div class="row">
                     <div>
                         <ul>
-                        <li *ngFor="let m of skillpro | split">{{m}}</li>
+                        <li *ngFor="let m of skillpro | split">
+                          <div *ngIf="m.indexOf('-')==-1">  
+                                <b>{{m}}</b>
+                          </div> 
+                          <div *ngIf="m.indexOf('-')!=-1">  
+                            {{m}}
+                           </div>   
+                        </li>
                         </ul>
                     </div>
                     </div>

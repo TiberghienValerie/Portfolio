@@ -11,6 +11,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillsproComponent } from './skillspro/skillspro.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -26,11 +28,13 @@ import { SkillsproComponent } from './skillspro/skillspro.component';
     EducationComponent,
     SkillsComponent,
     SkillsproComponent,
+    ProjectsComponent,
     
   ],
   imports: [
     CommonModule,
     FormsModule,
+    NgxPaginationModule
   ]
 })
 export class PortfolioModule { }
