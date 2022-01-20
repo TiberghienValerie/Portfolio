@@ -19,7 +19,7 @@ export class PortfolioService {
       title: 'BusinessCase Front',
       desc: '',
       githurl: 'https://github.com/TiberghienValerie/BusinessCase_Front',
-      livedemo: 'https://home-vtiberghienbc.atwebpages.com/',
+      livedemo: 'http://home-vtiberghienbc.atwebpages.com/',
       mediumlink: '',
       imgUrl: 'assets/images/businessCaseFront.png',
       tech: 'Angular 12 , Boostrap'
@@ -30,7 +30,7 @@ export class PortfolioService {
       title: 'BusinessCase Back',
       desc: '',
       githurl: 'https://github.com/TiberghienValerie/BusinessCase_Back',
-      livedemo: 'https://api-vtiberghienbc.atwebpages.com/api',
+      livedemo: 'http://api-vtiberghienbc.atwebpages.com/api',
       mediumlink: '',
       imgUrl: 'assets/images/businessCaseBack.png',
       tech: 'Symfony, Api Platform, MySql'
